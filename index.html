@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+	<title>Emporio Janial</title>
+	<style>
+		* {
+    			box-sizing: border-box;
+		}
+
+		.top-bar {
+			background-color: #91592c;
+			height: 32px;
+			width: 100%;
+    			color: #fff;
+    			font-size: 14px;
+			font-weight: bold;
+			font-family: Arial;
+    			padding-left: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.logo-bar {
+			background-color: #f9f3e5;
+			height: 132px;
+			width: 100%;
+    			color: #fff;
+    			align-items: center;
+			padding-top: 0px;
+		}
+
+
+		.text-bar {
+			background-color: #168545;
+			height: auto;
+			width: 100%;
+    			color: #fff;
+			font-size: 18px;
+    			align-items: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Arial;
+		}
+
+		img {
+			height: 100px;
+			width: auto;
+			margin-top: 20px;
+		}
+
+		body {
+			font-family: Lobster Two, cursive;
+			font-size: 18px;
+			font-weight: 400;
+			text-align: center;
+			background-color: #f7f7f7;
+		}
+
+		.title {
+			position: relative;
+			padding-bottom: 10px;
+			font-size: 38px;
+			margin-top: 40px;
+		}
+
+		.title::after {
+		    	content: "";
+    			position: absolute;
+    			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+    			width: 10%;
+    			height: 3px;
+    			background: black;
+			border-radius: 50px;
+		}
+
+
+		.grid-container {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 0px;
+    			max-width: 900px;
+   			margin: 10px auto;
+			margin-top: 0px;
+    			padding: 10px;
+			box-sizing: border-box;
+		}
+
+		.grid-button {
+       			padding: 20px;
+    			text-align: center;
+    			height: 85px;
+			border: none;
+    			display: flex;
+    			flex-direction: column;
+			box-sizing: border-box;
+			font-family: Lobster, cursive;
+			color: white;
+			font-size: 26px;
+			cursor: pointer;
+			align-items: center;
+    			justify-content: center;
+    			text-align: center;
+			transition: transform 0.15s ease, box-shadow 0.15s ease;
+			text-decoration: none
+		}
+
+		.grid-button:hover {
+    			transform: translateY(-3px);
+   			box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+		}
+
+		.grid-button.disabled {
+    			pointer-events: none;      
+   			position: relative;
+    			cursor: default;
+    			transform: none !important;
+   			box-shadow: none !important;
+		}
+
+		.grid-button.disabled::after {
+    			content: "Em breve";
+			font-family: Lobster Two, cursive;
+    			position: absolute;
+    			top: 18px;
+    			right: 5px;
+   		 	background: #91592c;
+    			color: white;
+    			padding: 3px 10px;
+    			font-size: 24px;
+    			font-weight: bold;
+    			transform: rotate(20deg);
+    			border-radius: 4px;
+		}
+
+		.item1 { background-color: #f2ce3d; }
+		.item2 { background-color: #f1ac3f; }
+		.item3 { background-color: #d17233; }
+		.item4 { background-color: #5298c5; }
+		.item5 { background-color: #a066b9; }
+		.item6 { background-color: #ca5f54; }
+		.item7 { background-color: #48c7ae; }
+		.item8 { background-color: #397c56; }
+		.item9 { background-color: #4ea775; }
+
+	</style>
+</head>
+<body>
+
+	<div class="top-bar">
+		Loja de Material para Artesanato - Atendimento WhatsApp: (19) 99804-6700
+	</div>
+
+	<div class="logo-bar">
+		<img src="EJlogolado.png" alt="EJlogo">
+	</div>
+
+	<div class="text-bar">
+		Olá!<br>
+		Encerraremos nossas atividades em breve.<br>
+		O estoque dos produtos disponíveis será vendido a partir de julho por WhatsApp com pagamento via PIX.<br>
+		Até mais!
+<!--		Escolha a categoria desejada e clique para ver o catálogo. -->
+	</div>
+
+	<h1 class="title">
+		Encontre seu Produto
+	</h1>
+
+	<div class="grid-container">
+
+<!--		<a href="stencil.html" class="grid-button item1">Stencil</a> -->
+<!--		<a href="resinas.html" class="grid-button item2">Resinas</a> -->
+
+		<a class="grid-button item1 disabled">Pincéis</a>
+		<a class="grid-button item2 disabled">Papel para Decoupage</a>		
+		<a class="grid-button item3 disabled">Guardanapos</a>
+		<a class="grid-button item4 disabled">Confeitaria</a>
+		<a class="grid-button item5 disabled">Stencil</a>
+		<a class="grid-button item6 disabled">Resinas</a>
+		<a class="grid-button item7 disabled">Aplique em Papel e MDF</a>
+		<a class="grid-button item8 disabled">Aviamentos</a>
+		<a class="grid-button item9 disabled">Stencil de Confeitaria</a>
+	</div>
+
+
+</body>
+</html>
