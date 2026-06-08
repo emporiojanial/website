@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+	<title>Emporio Janial</title>
+	<style>
+		* {
+    			box-sizing: border-box;
+		}
+
+		.top-bar {
+			background-color: #91592c;
+			height: 32px;
+			width: 100%;
+    			color: #fff;
+    			font-size: 14px;
+			font-weight: bold;
+			font-family: Arial;
+    			padding-left: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.logo-bar {
+			background-color: #f9f3e5;
+			height: 132px;
+			width: 100%;
+    			color: #fff;
+    			align-items: center;
+			padding-top: 0px;
+		}
+
+
+		.green-bar {
+			background-color: #168545;
+			height: 64px;
+			width: 100%;
+    			color: #fff;
+			font-size: 32px;
+			display: flex;
+    			align-items: center;
+			justify-content: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Lobster, cursive;
+		}
+
+		.title {
+			background-color: #2dcc70;
+			color: #fff;
+			position: relative;
+			font-size: 28px;
+   			padding: 20px 0;
+			margin: 0;
+			display: flex;
+ 			justify-content: center;
+   			align-items: center;
+		}
+
+		.category-bar {
+			background-color: #a066b9;
+			width: 100%;
+    			color: #ffffff;
+			font-size: 28px;
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 20px;
+			padding: 20px 40px;
+			text-align: center;
+			font-family: Lobster Two, cursive;
+		}
+
+		.category-item {
+		    	color: #fff;
+    			font-weight: 600;
+    			text-decoration: none;
+  			padding: 8px 12px;
+    			border-radius: 6px;
+    			transition: 0.2s;
+		}
+
+		.category-item.disabled {
+    			pointer-events: none;      
+   			position: relative;
+    			cursor: default;
+			font-size: 22px;
+			color: #c7c5c5;
+		}
+
+		.category-item.disabled::after {
+    			content: "Em breve";
+			font-family: Lobster Two, cursive;
+    			position: absolute;
+    			top: -10px;
+    			right: -20px;
+   		 	background: #91592c;
+    			color: white;
+    			padding: 3px 10px;
+    			font-size: 16px;
+    			font-weight: bold;
+    			transform: rotate(20deg);
+    			border-radius: 4px;
+		}
+
+		img {
+			height: 100px;
+			width: auto;
+			margin-top: 20px;
+		}
+
+		body {
+			font-family: Lobster Two, cursive;
+			font-size: 18px;
+			font-weight: 400;
+			text-align: center;
+			background-color: #f7f7f7;
+			margin: 0;
+    			padding: 0;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="top-bar">
+		Loja de Material para Artesanato - Atendimento WhatsApp: (19) 99804-6700
+	</div>
+
+	<div class="logo-bar">
+		<img src="EJlogolado.png" alt="EJlogo">
+	</div>
+
+	<div class="green-bar">
+		Stencil
+	</div>
+
+	<h1 class="title">
+		Escolha a categoria
+	</h1>
+
+	<div class="category-bar">
+		<a href="natal.html" class="category-item">Natal</a>
+		<a href="apliques.html" class="category-item disabled">Alfabetos/Números</a>
+    		<a href="bandejas.html" class="category-item disabled">Alimentos/Cozinha</a>
+    		<a href="kits.html" class="category-item disabled">Animais</a>
+    		<a href="kits.html" class="category-item disabled">Arabescos</a>
+    		<a href="kits.html" class="category-item disabled">Azulejos/Ladrilhos/Estamparia</a>
+    		<a href="kits.html" class="category-item disabled">Bordado</a>    		    		<a href="kits.html" class="category-item disabled">Cantoneiras/Molduras/Placas</a>    		<a href="kits.html" class="category-item disabled">Casa</a>    		    			<a href="kits.html" class="category-item disabled">Cinema</a>    		    		<a href="kits.html" class="category-item disabled">Confeitaria</a>    		    		<a href="kits.html" class="category-item disabled">Diversos</a>    		    		<a href="kits.html" class="category-item disabled">Flores/Folhas</a>    		    	<a href="kits.html" class="category-item disabled">Geométricos</a>    		    		<a href="kits.html" class="category-item disabled">Infantis</a>
+    		<a href="kits.html" class="category-item disabled">Lugares</a>    		    		<a href="kits.html" class="category-item disabled">Mandalas</a>    		    		<a href="kits.html" class="category-item disabled">Música</a>     		
+   		<a href="kits.html" class="category-item disabled">Náutico/Marinho</a>    		    	<a href="kits.html" class="category-item disabled">Negativo</a>    		    		<a href="kits.html" class="category-item disabled">Objetos</a>    		    		<a href="kits.html" class="category-item disabled">Palavras/Frases/Orações</a>    		<a href="kits.html" class="category-item disabled">Páscoa</a>    		    		<a href="kits.html" class="category-item disabled">Pessoas</a>    		    		<a href="kits.html" class="category-item disabled">Profissões</a>    		
+		<a href="kits.html" class="category-item disabled">Religioso</a>
+		<a href="kits.html" class="category-item disabled">Renda</a>
+		<a href="kits.html" class="category-item disabled">Românticos</a>
+		<a href="kits.html" class="category-item disabled">Transportes</a>
+	</div>
+
+
+
+</body>
+</html>
