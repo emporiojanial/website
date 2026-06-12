@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+	<title>Emporio Janial</title>
+	<style>
+		* {
+    			box-sizing: border-box;
+		}
+
+		.top-bar {
+			background-color: #91592c;
+			height: 32px;
+			width: 100%;
+    			color: #fff;
+    			font-size: 14px;
+			font-weight: bold;
+			font-family: Arial;
+    			padding-left: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.logo-bar {
+			background-color: #f9f3e5;
+			height: 132px;
+			width: 100%;
+    			color: #fff;
+    			align-items: center;
+			padding-top: 0px;
+		}
+
+		img {
+			height: 100px;
+			width: auto;
+			margin-top: 20px;
+		}
+
+		body {
+			font-family: Lobster Two, cursive;
+			font-size: 18px;
+			font-weight: 400;
+			text-align: center;
+			background-color: #f7f7f7;
+			margin: 0;
+    			padding: 0;
+		}
+
+		.green-bar {
+			background-color: #168545;
+			height: 64px;
+			width: 100%;
+    			color: #fff;
+			font-size: 32px;
+			display: flex;
+    			align-items: center;
+			justify-content: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Lobster, cursive;
+		}
+
+		.green-link {
+		    color: #fff;
+		    text-decoration: none;
+		    font-family: Lobster, cursive;
+		    font-size: 32px;
+		}
+	
+		.green-link:hover {
+		    text-decoration: underline;
+		}
+
+		.title {
+			background-color: #2dcc70;
+			color: #fff;
+			position: relative;
+			font-size: 28px;
+   			padding: 20px 0;
+			margin: 0;
+			margin-bottom: 20px;
+			display: flex;
+ 			justify-content: center;
+   			align-items: center;
+		}
+
+		.size-bar {
+			background-color: #fff;
+			height: 60px;
+			width: 100%;
+    			color: #000;
+			font-size: 24px;
+			display: flex;
+    			align-items: center;
+			justify-content: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Lobster, cursive;
+		}
+
+		.products-grid {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 20px;
+    			max-width: 900px;
+   			margin: 10px auto;
+			margin-top: 0px;
+    			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		.products-grid img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+    			background-color: #eee;
+		}
+
+		.product {
+    			text-align: center;
+		}
+
+		.item img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+		}
+		
+		.label {
+    			margin-top: 8px;
+    			font-size: 16px;
+    			color: black;
+    			font-weight: 600;
+			font-family: Arial;
+		}
+
+		.back-to-top {
+ 		   	position: fixed;
+    			bottom: 20px;
+    			right: 20px;
+    			width: 45px;
+    			height: 45px;
+    			background-color: #168545;
+    			color: #fff;
+    			border: none;
+    			border-radius: 50%;
+    			font-size: 22px;
+    			font-weight: bold;
+    			cursor: pointer;
+    			box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    			display: flex;
+    			align-items: center;
+    			justify-content: center;
+    			z-index: 9999;
+    			transition: transform 0.2s ease, background-color 0.2s ease;
+		}
+
+		.back-to-top:hover {
+    			background-color: #0f6a36;
+    			transform: scale(1.1);
+		}
+		
+
+	</style>
+</head>
+
+
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ↑
+</button>
+
+<body>
+
+	<div class="top-bar">
+		Loja de Material para Artesanato - Atendimento WhatsApp: (19) 99804-6700
+	</div>
+
+	<div class="logo-bar">
+		<a href="https://emporiojanial.com.br">
+			<img src="/images/EJlogolado.png" alt="EJlogo">
+		</a>
+	</div>
+
+	<div class="green-bar">
+		<a href="https://emporiojanial.com.br/stencil" class="green-link">Stencil</a>
+	</div>
+
+	<h1 class="title">
+		Natal
+	</h1>
+
+	<div class="size-bar">
+		4 x 30 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/jk-207.jpg" loading="lazy" alt="">			<p class="label">JK 207</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/jk-287.jpg" loading="lazy" alt="">			<p class="label">JK 287</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JK-431.jpg" loading="lazy" alt="">			<p class="label">JK 431</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JK-432.jpg" loading="lazy" alt="">			<p class="label">JK 432</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JK-434.jpg" loading="lazy" alt="">			<p class="label">JK 434</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JK-439.jpg" loading="lazy" alt="">			<p class="label">JK 439</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JK-440.jpg" loading="lazy" alt="">			<p class="label">JK 440</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JK-441.jpg" loading="lazy" alt="">			<p class="label">JK 441</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JK-442.jpg" loading="lazy" alt="">			<p class="label">JK 442</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JK-443.jpg" loading="lazy" alt="">			<p class="label">JK 443</p>
+		</div>
+
+		<div class="product">
+			<img src="/images/stencil/natal/OPA306.jpg" loading="lazy" alt="">			<p class="label">OPAN 306</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA307.jpg" loading="lazy" alt="">			<p class="label">OPAN 307</p>
+		</div>
+	</div>
+
+	<div class="size-bar">
+		6 x 30 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1788.jpg" loading="lazy" alt="">			<p class="label">OPA 1788</p>
+		</div>
+	</div>
+
+	<div class="size-bar">
+		7 x 15 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2542.jpg" loading="lazy" alt="">			<p class="label">OPA 2542</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2543.jpg" loading="lazy" alt="">			<p class="label">OPA 2543</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA3013.jpg" loading="lazy" alt="">			<p class="label">OPA 3013</p>
+		</div>
+	</div>
+
+	<div class="size-bar">
+		10 x 10 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/ja-002.jpg" loading="lazy" alt="">			<p class="label">JA 002</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/ja-011.jpg" loading="lazy" alt="">			<p class="label">JA 011</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/ja-016.jpg" loading="lazy" alt="">			<p class="label">JA 016</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JA-218.jpg" loading="lazy" alt="">			<p class="label">JA 218</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JA-222.jpg" loading="lazy" alt="">			<p class="label">JA 222</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JA-225.jpg" loading="lazy" alt="">			<p class="label">JA 225</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JA-229.jpg" loading="lazy" alt="">			<p class="label">JA 229</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JA-231.jpg" loading="lazy" alt="">			<p class="label">JA 231</p>
+		</div>
+
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2106.jpg" loading="lazy" alt="">			<p class="label">OPA 2106</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2107.jpg" loading="lazy" alt="">			<p class="label">OPA 2107</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2108.jpg" loading="lazy" alt="">			<p class="label">OPA 2108</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2109.jpg" loading="lazy" alt="">			<p class="label">OPA 2109</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA3015.jpg" loading="lazy" alt="">			<p class="label">OPA 3015</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA3018.jpg" loading="lazy" alt="">			<p class="label">OPA 3018</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA316.jpg" loading="lazy" alt="">			<p class="label">OPAN 316</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA868.jpg" loading="lazy" alt="">			<p class="label">OPAN 868</p>
+		</div>
+	</div>
+
+	<div class="size-bar">
+		10 x 30 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/JB-634.jpg" loading="lazy" alt="">				<p class="label">JB 634</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JB-725.jpg" loading="lazy" alt="">				<p class="label">JB 725</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JB-732.jpg" loading="lazy" alt="">				<p class="label">JB 732</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/jb-748.jpg" loading="lazy" alt="">				<p class="label">JB 748</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JB-883.jpg" loading="lazy" alt="">				<p class="label">JB 883</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JB-884.jpg" loading="lazy" alt="">				<p class="label">JB 884</p>
+		</div>
+
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1109.jpg" loading="lazy" alt="">			<p class="label">OPA 1109</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1110.jpg" loading="lazy" alt="">			<p class="label">OPA 1110</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1111.jpg" loading="lazy" alt="">			<p class="label">OPA 1111</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1112.jpg" loading="lazy" alt="">			<p class="label">OPA 1112</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2307.jpg" loading="lazy" alt="">			<p class="label">OPA 2307</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2308.jpg" loading="lazy" alt="">			<p class="label">OPA 2308</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2309.jpg" loading="lazy" alt="">			<p class="label">OPA 2309</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2544.jpg" loading="lazy" alt="">			<p class="label">OPA 2544</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2545.jpg" loading="lazy" alt="">			<p class="label">OPA 2545</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2546.jpg" loading="lazy" alt="">			<p class="label">OPA 2546</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2547.jpg" loading="lazy" alt="">			<p class="label">OPA 2547</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2548.jpg" loading="lazy" alt="">			<p class="label">OPA 2548</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2733.jpg" loading="lazy" alt="">			<p class="label">OPA 2733</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2735.jpg" loading="lazy" alt="">			<p class="label">OPA 2735</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA3000.jpg" loading="lazy" alt="">			<p class="label">OPA 3000</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA3281.jpg" loading="lazy" alt="">			<p class="label">OPA 3281</p>
+		</div>
+
+	</div>
+
+	<div class="size-bar">
+		14 x 14 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1106.jpg" loading="lazy" alt="">			<p class="label">OPA 1106</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1107.jpg" loading="lazy" alt="">			<p class="label">OPA 1107</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1108.jpg" loading="lazy" alt="">			<p class="label">OPA 1108</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2110.jpg" loading="lazy" alt="">			<p class="label">OPA 2110</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2112.jpg" loading="lazy" alt="">			<p class="label">OPA 2112</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2113.jpg" loading="lazy" alt="">			<p class="label">OPA 2113</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2549.jpg" loading="lazy" alt="">			<p class="label">OPA 2549</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2550.jpg" loading="lazy" alt="">			<p class="label">OPA 2550</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA3010.jpg" loading="lazy" alt="">			<p class="label">OPA 3010</p>
+		</div>
+	</div>
+
+	<div class="size-bar">
+		15 x 15 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/QD-274.jpg" loading="lazy" alt="">					<p class="label">QD 274</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/qd-311.jpg" loading="lazy" alt="">					<p class="label">QD 311</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/QD-390.jpg" loading="lazy" alt="">					<p class="label">QD 390</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/QD-391.jpg" loading="lazy" alt="">					<p class="label">QD 391</p>
+		</div>
+	</div>	
+
+	<div class="size-bar">
+		15 x 20 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/jc-1187.jpg" loading="lazy" alt="">			<p class="label">JC 1187</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JC-1376.jpg" loading="lazy" alt="">			<p class="label">JC 1376</p>
+		</div>
+
+		<div class="product">
+			<img src="/images/stencil/natal/OPA872.jpg" loading="lazy" alt="">			<p class="label">OPA 872</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1113.jpg" loading="lazy" alt="">			<p class="label">OPA 1113</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1114.jpg" loading="lazy" alt="">			<p class="label">OPA 1114</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1115.jpg" loading="lazy" alt="">			<p class="label">OPA 1115</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1116.jpg" loading="lazy" alt="">			<p class="label">OPA 1116</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA1117.jpg" loading="lazy" alt="">			<p class="label">OPA 1117</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2114.jpg" loading="lazy" alt="">			<p class="label">OPA 2114</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2115.jpg" loading="lazy" alt="">			<p class="label">OPA 2115</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA2310.jpg" loading="lazy" alt="">			<p class="label">OPA 2310</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA3287.jpg" loading="lazy" alt="">			<p class="label">OPA 3287</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA3289.jpg" loading="lazy" alt="">			<p class="label">OPA 3289</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA3451.jpg" loading="lazy" alt="">			<p class="label">OPA 3451</p>
+		</div>
+
+	</div>	
+
+	<div class="size-bar">
+		17 x 42 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+	</div>
+
+	<div class="size-bar">
+		20 x 25 cm  e  20 x 26 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/JN-1725.jpg" loading="lazy" alt="">			<p class="label">JN 1725</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JN-1726.jpg" loading="lazy" alt="">			<p class="label">JN 1726</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/JN-1727.jpg" loading="lazy" alt="">			<p class="label">JN 1727</p>
+		</div>
+
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+	</div>	
+
+	<div class="size-bar">
+		30,5 x 30,5 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+	</div>
+
+	<div class="size-bar">
+		32 x 42 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/natal/OPA.jpg" loading="lazy" alt="">			<p class="label">OPA </p>
+		</div>
+	</div>
+
+</body>
+</html>
