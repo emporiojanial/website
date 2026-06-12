@@ -64,6 +64,17 @@
 			font-family: Lobster, cursive;
 		}
 
+		.green-link {
+		    color: #fff;
+		    text-decoration: none;
+		    font-family: Lobster, cursive;
+		    font-size: 32px;
+		}
+	
+		.green-link:hover {
+		    text-decoration: underline;
+		}
+
 		.title {
 			background-color: #2dcc70;
 			color: #fff;
@@ -114,10 +125,40 @@
     			font-weight: 600;
 			font-family: Arial;
 		}
-		
+
+		.back-to-top {
+ 		   	position: fixed;
+    			bottom: 20px;
+    			right: 20px;
+    			width: 45px;
+    			height: 45px;
+    			background-color: #168545;
+    			color: #fff;
+    			border: none;
+    			border-radius: 50%;
+    			font-size: 22px;
+    			font-weight: bold;
+    			cursor: pointer;
+    			box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    			display: flex;
+    			align-items: center;
+    			justify-content: center;
+    			z-index: 9999;
+    			transition: transform 0.2s ease, background-color 0.2s ease;
+		}
+
+		.back-to-top:hover {
+    			background-color: #0f6a36;
+    			transform: scale(1.1);
+		}
 
 	</style>
 </head>
+
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ↑
+</button>
+	
 <body>
 
 	<div class="top-bar">
@@ -125,11 +166,13 @@
 	</div>
 
 	<div class="logo-bar">
-		<img src="/images/EJlogolado.png" alt="EJlogo">
+		<a href="https://emporiojanial.com.br">
+			<img src="/images/EJlogolado.png" alt="EJlogo">
+		</a>
 	</div>
 
 	<div class="green-bar">
-		Resinas
+		<a href="https://emporiojanial.com.br/resinas" class="green-link">Resinas</a>
 	</div>
 
 	<h1 class="title">
