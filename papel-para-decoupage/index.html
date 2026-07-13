@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+	<title>Emporio Janial</title>
+	<style>
+		* {
+    			box-sizing: border-box;
+		}
+
+		.top-bar {
+			background-color: #91592c;
+			height: 32px;
+			width: 100%;
+    			color: #fff;
+    			font-size: 14px;
+			font-weight: bold;
+			font-family: Arial;
+    			padding-left: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.logo-bar {
+			background-color: #f9f3e5;
+			height: 132px;
+			width: 100%;
+    			color: #fff;
+    			align-items: center;
+			padding-top: 0px;
+		}
+
+		img {
+			height: 100px;
+			width: auto;
+			margin-top: 20px;
+		}
+
+		body {
+			font-family: Lobster Two, cursive;
+			font-size: 18px;
+			font-weight: 400;
+			text-align: center;
+			background-color: #f7f7f7;
+			margin: 0;
+    			padding: 0;
+		}
+
+		.green-bar {
+			background-color: #168545;
+			height: 64px;
+			width: 100%;
+    			color: #fff;
+			font-size: 32px;
+			display: flex;
+    			align-items: center;
+			justify-content: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Lobster, cursive;
+		}
+
+		.green-link {
+		    color: #fff;
+		    text-decoration: none;
+		    font-family: Lobster, cursive;
+		    font-size: 32px;
+		}
+	
+		.green-link:hover {
+		    text-decoration: underline;
+		}
+
+		.title {
+			background-color: #2dcc70;
+			color: #fff;
+			position: relative;
+			font-size: 28px;
+   			padding: 20px 0;
+			margin: 0;
+			display: flex;
+ 			justify-content: center;
+   			align-items: center;
+		}
+
+		.products-grid {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 20px;
+    			max-width: 900px;
+   			margin: 10px auto;
+			margin-top: 0px;
+    			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		.products-grid img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+    			background-color: #eee;
+		}
+
+		.product {
+    			text-align: center;
+		}
+
+		.item img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+		}
+		
+		.label {
+    			margin-top: 8px;
+    			font-size: 16px;
+    			color: black;
+    			font-weight: 600;
+			font-family: Arial;
+		}
+
+		.back-to-top {
+ 		   	position: fixed;
+    			bottom: 20px;
+    			right: 20px;
+    			width: 45px;
+    			height: 45px;
+    			background-color: #168545;
+    			color: #fff;
+    			border: none;
+    			border-radius: 50%;
+    			font-size: 22px;
+    			font-weight: bold;
+    			cursor: pointer;
+    			box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    			display: flex;
+    			align-items: center;
+    			justify-content: center;
+    			z-index: 9999;
+    			transition: transform 0.2s ease, background-color 0.2s ease;
+		}
+
+		.back-to-top:hover {
+    			background-color: #0f6a36;
+    			transform: scale(1.1);
+		}
+
+	</style>
+</head>
+
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ↑
+</button>
+	
+<body>
+
+	<div class="top-bar">
+		Loja de Material para Artesanato - Atendimento WhatsApp: (19) 99804-6700
+	</div>
+
+	<div class="logo-bar">
+		<a href="https://emporiojanial.com.br">
+			<img src="/images/EJlogolado.png" alt="EJlogo">
+		</a>
+	</div>
+
+	<div class="green-bar">
+		<a href="https://emporiojanial.com.br/resinas" class="green-link">Resinas</a>
+	</div>
+
+	<h1 class="title">
+		Apliques
+	</h1>
+
+	<div class="products-grid">
+
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1001.jpg" loading="lazy" alt=""> 			<p class="label">AP1001</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1005.jpg" loading="lazy" alt="">			<p class="label">AP1005</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1006.jpg" loading="lazy" alt="">			<p class="label">AP1006</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1008.jpg" loading="lazy" alt="">			<p class="label">AP1008</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1010.jpg" loading="lazy" alt="">			<p class="label">AP1010</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1012.jpg" loading="lazy" alt="">			<p class="label">AP1012</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1013.jpg" loading="lazy" alt="">			<p class="label">AP1013</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1014.jpg" loading="lazy" alt="">			<p class="label">AP1014</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1016.jpg" loading="lazy" alt="">			<p class="label">AP1016</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1018.jpg" loading="lazy" alt="">			<p class="label">AP1018</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1019.jpg" loading="lazy" alt="">			<p class="label">AP1019</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1020.jpg" loading="lazy" alt="">			<p class="label">AP1020</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1023.jpg" loading="lazy" alt="">			<p class="label">AP1023</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1024.jpg" loading="lazy" alt="">			<p class="label">AP1024</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1025.jpg" loading="lazy" alt="">			<p class="label">AP1025</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1027.jpg" loading="lazy" alt="">			<p class="label">AP1027</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1029.jpg" loading="lazy" alt="">			<p class="label">AP1029</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1030.jpg" loading="lazy" alt="">			<p class="label">AP1030</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1031.jpg" loading="lazy" alt="">			<p class="label">AP1031</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1034.jpg" loading="lazy" alt="">			<p class="label">AP1034</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1039.jpg" loading="lazy" alt="">			<p class="label">AP1039</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1041.jpg" loading="lazy" alt="">			<p class="label">AP1041</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1042.jpg" loading="lazy" alt="">			<p class="label">AP1042</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1043.jpg" loading="lazy" alt="">			<p class="label">AP1043</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1050.jpg" loading="lazy" alt="">			<p class="label">AP1050</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1051.jpg" loading="lazy" alt="">			<p class="label">AP1051</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1054.jpg" loading="lazy" alt="">			<p class="label">AP1054</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1059.jpg" loading="lazy" alt="">			<p class="label">AP1059</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1060.jpg" loading="lazy" alt="">			<p class="label">AP1060</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1061.jpg" loading="lazy" alt="">			<p class="label">AP1061</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1062.jpg" loading="lazy" alt="">			<p class="label">AP1062</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1064.jpg" loading="lazy" alt="">			<p class="label">AP1064</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1065.jpg" loading="lazy" alt="">			<p class="label">AP1065</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1066.jpg" loading="lazy" alt="">			<p class="label">AP1066</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1073.jpg" loading="lazy" alt="">			<p class="label">AP1073</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1076.jpg" loading="lazy" alt="">			<p class="label">AP1076</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1077.jpg" loading="lazy" alt="">			<p class="label">AP1077</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1079.jpg" loading="lazy" alt="">			<p class="label">AP1079</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1080.jpg" loading="lazy" alt="">			<p class="label">AP1080</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1081.jpg" loading="lazy" alt="">			<p class="label">AP1081</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1083.jpg" loading="lazy" alt="">			<p class="label">AP1083</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1084.jpg" loading="lazy" alt="">			<p class="label">AP1084</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1087.jpg" loading="lazy" alt="">			<p class="label">AP1087</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1088.jpg" loading="lazy" alt="">			<p class="label">AP1088</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1091.jpg" loading="lazy" alt="">			<p class="label">AP1091</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1093.jpg" loading="lazy" alt="">			<p class="label">AP1093</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1095.jpg" loading="lazy" alt="">			<p class="label">AP1095</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1096.jpg" loading="lazy" alt="">			<p class="label">AP1096</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1101.jpg" loading="lazy" alt="">			<p class="label">AP1101</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1102.jpg" loading="lazy" alt="">			<p class="label">AP1102</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1103.jpg" loading="lazy" alt="">			<p class="label">AP1103</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1104.jpg" loading="lazy" alt="">			<p class="label">AP1104</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1106.jpg" loading="lazy" alt="">			<p class="label">AP1106</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1108.jpg" loading="lazy" alt="">			<p class="label">AP1108</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1109.jpg" loading="lazy" alt="">			<p class="label">AP1109</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1110.jpg" loading="lazy" alt="">			<p class="label">AP1110</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1111.jpg" loading="lazy" alt="">			<p class="label">AP1111</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1113.jpg" loading="lazy" alt="">			<p class="label">AP1113</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1115.jpg" loading="lazy" alt="">			<p class="label">AP1115</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1119.jpg" loading="lazy" alt="">			<p class="label">AP1119</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1120.jpg" loading="lazy" alt="">			<p class="label">AP1120</p>
+		</div>	
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1121.jpg" loading="lazy" alt="">			<p class="label">AP1121</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1122.jpg" loading="lazy" alt="">			<p class="label">AP1122</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1124.jpg" loading="lazy" alt="">			<p class="label">AP1124</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1126.jpg" loading="lazy" alt="">			<p class="label">AP1126</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1127.jpg" loading="lazy" alt="">			<p class="label">AP1127</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1128.jpg" loading="lazy" alt="">			<p class="label">AP1128</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1130.jpg" loading="lazy" alt="">			<p class="label">AP1130</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1132.jpg" loading="lazy" alt="">			<p class="label">AP1132</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1140.jpg" loading="lazy" alt="">			<p class="label">AP1140</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1141.jpg" loading="lazy" alt="">			<p class="label">AP1141</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1142.jpg" loading="lazy" alt="">			<p class="label">AP1142</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1144.jpg" loading="lazy" alt="">			<p class="label">AP1144</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1145.jpg" loading="lazy" alt="">			<p class="label">AP1145</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1146.jpg" loading="lazy" alt="">			<p class="label">AP1146</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1148.jpg" loading="lazy" alt="">			<p class="label">AP1148</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1150.jpg" loading="lazy" alt="">			<p class="label">AP1150</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1151.jpg" loading="lazy" alt="">			<p class="label">AP1151</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1152.jpg" loading="lazy" alt="">			<p class="label">AP1152</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1154.jpg" loading="lazy" alt="">			<p class="label">AP1154</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1156.jpg" loading="lazy" alt="">			<p class="label">AP1156</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1159.jpg" loading="lazy" alt="">			<p class="label">AP1159</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1160.jpg" loading="lazy" alt="">			<p class="label">AP1160</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1161.jpg" loading="lazy" alt="">			<p class="label">AP1161</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1165.jpg" loading="lazy" alt="">			<p class="label">AP1165</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1167.jpg" loading="lazy" alt="">			<p class="label">AP1167</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1169.jpg" loading="lazy" alt="">			<p class="label">AP1169</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1170.jpg" loading="lazy" alt="">			<p class="label">AP1170</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1175.jpg" loading="lazy" alt="">			<p class="label">AP1175</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1176.jpg" loading="lazy" alt="">			<p class="label">AP1176</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1183.jpg" loading="lazy" alt="">			<p class="label">AP1183</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1185.jpg" loading="lazy" alt="">			<p class="label">AP1185</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1187.jpg" loading="lazy" alt="">			<p class="label">AP1187</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1188.jpg" loading="lazy" alt="">			<p class="label">AP1188</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1191.jpg" loading="lazy" alt="">			<p class="label">AP1191</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1192.jpg" loading="lazy" alt="">			<p class="label">AP1192</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1194.jpg" loading="lazy" alt="">			<p class="label">AP1194</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1195.jpg" loading="lazy" alt="">			<p class="label">AP1195</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1198.jpg" loading="lazy" alt="">			<p class="label">AP1198</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1201.jpg" loading="lazy" alt="">			<p class="label">AP1201</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1202.jpg" loading="lazy" alt="">			<p class="label">AP1202</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1203.jpg" loading="lazy" alt="">			<p class="label">AP1203</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1204.jpg" loading="lazy" alt="">			<p class="label">AP1204</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1210.jpg" loading="lazy" alt="">			<p class="label">AP1210</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1212.jpg" loading="lazy" alt="">			<p class="label">AP1212</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1213.jpg" loading="lazy" alt="">			<p class="label">AP1213</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1217.jpg" loading="lazy" alt="">			<p class="label">AP1217</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1221.jpg" loading="lazy" alt="">			<p class="label">AP1221</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1222.jpg" loading="lazy" alt="">			<p class="label">AP1222</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1223.jpg" loading="lazy" alt="">			<p class="label">AP1223</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1224.jpg" loading="lazy" alt="">			<p class="label">AP1224</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1233.jpg" loading="lazy" alt="">			<p class="label">AP1233</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1236.jpg" loading="lazy" alt="">			<p class="label">AP1236</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1239.jpg" loading="lazy" alt="">			<p class="label">AP1239</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1244.jpg" loading="lazy" alt="">			<p class="label">AP1244</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1246.jpg" loading="lazy" alt="">			<p class="label">AP1246</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1248.jpg" loading="lazy" alt="">			<p class="label">AP1248</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1255.jpg" loading="lazy" alt="">			<p class="label">AP1255</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1256.jpg" loading="lazy" alt="">			<p class="label">AP1256</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1257.jpg" loading="lazy" alt="">			<p class="label">AP1257</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1261.jpg" loading="lazy" alt="">			<p class="label">AP1261</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1264.jpg" loading="lazy" alt="">			<p class="label">AP1264</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1268.jpg" loading="lazy" alt="">			<p class="label">AP1268</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1271.jpg" loading="lazy" alt="">			<p class="label">AP1271</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1272.jpg" loading="lazy" alt="">			<p class="label">AP1272</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1273.jpg" loading="lazy" alt="">			<p class="label">AP1273</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1274.jpg" loading="lazy" alt="">			<p class="label">AP1274</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1300.jpg" loading="lazy" alt="">			<p class="label">AP1300</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1303.jpg" loading="lazy" alt="">			<p class="label">AP1303</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1304.jpg" loading="lazy" alt="">			<p class="label">AP1304</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1305.jpg" loading="lazy" alt="">			<p class="label">AP1305</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1306.jpg" loading="lazy" alt="">			<p class="label">AP1306</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/AP1312.jpg" loading="lazy" alt="">			<p class="label">AP1312</p>
+		</div>
+
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0001.jpg" loading="lazy" alt="">			<p class="label">PR0001</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0003.jpg" loading="lazy" alt="">			<p class="label">PR0003</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0005.jpg" loading="lazy" alt="">			<p class="label">PR0005</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0006.jpg" loading="lazy" alt="">			<p class="label">PR0006</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0009.jpg" loading="lazy" alt="">			<p class="label">PR0009</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0011.jpg" loading="lazy" alt="">			<p class="label">PR0011</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0012.jpg" loading="lazy" alt="">			<p class="label">PR0012</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0013.jpg" loading="lazy" alt="">			<p class="label">PR0013</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0014.jpg" loading="lazy" alt="">			<p class="label">PR0014</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0015.jpg" loading="lazy" alt="">			<p class="label">PR0015</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0018.jpg" loading="lazy" alt="">			<p class="label">PR0018</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0019.jpg" loading="lazy" alt="">			<p class="label">PR0019</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0021.jpg" loading="lazy" alt="">			<p class="label">PR0021</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0023.jpg" loading="lazy" alt="">			<p class="label">PR0023</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0024.jpg" loading="lazy" alt="">			<p class="label">PR0024</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0025.jpg" loading="lazy" alt="">			<p class="label">PR0025</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0029.jpg" loading="lazy" alt="">			<p class="label">PR0029</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0031.jpg" loading="lazy" alt="">			<p class="label">PR0031</p>
+		</div>
+		<div class="product">
+			<img src="/images/resinas/apliques/PR0032.jpg" loading="lazy" alt="">			<p class="label">PR0032</p>
+		</div>
+	</div>
+
+</body>
+</html>
