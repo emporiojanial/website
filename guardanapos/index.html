@@ -33,81 +33,6 @@
 			padding-top: 0px;
 		}
 
-
-		.green-bar {
-			background-color: #168545;
-			height: 64px;
-			width: 100%;
-    			color: #fff;
-			font-size: 32px;
-			display: flex;
-    			align-items: center;
-			justify-content: center;
-			padding: 20px 80px;
-			line-height: 1.6; 
-			text-align: left;
-			font-family: Lobster, cursive;
-		}
-
-		.title {
-			background-color: #2dcc70;
-			color: #fff;
-			position: relative;
-			font-size: 28px;
-   			padding: 20px 0;
-			margin: 0;
-			display: flex;
- 			justify-content: center;
-   			align-items: center;
-		}
-
-		.category-bar {
-			background-color: #f1ac3f;
-			height: 128px;
-			width: 100%;
-    			color: #fff;
-			font-size: 28px;
-			display: flex;
-			justify-content: space-around;
-    			align-items: center;
-			padding: 20px 80px;
-			line-height: 1.6; 
-			text-align: left;
-			font-family: Lobster Two, cursive;
-		}
-
-		.category-item {
-		    	color: #fff;
-    			font-weight: 600;
-    			text-decoration: none;
-  			padding: 8px 12px;
-    			border-radius: 6px;
-    			transition: 0.2s;
-		}
-
-		.category-item.disabled {
-    			pointer-events: none;      
-   			position: relative;
-    			cursor: default;
-			font-size: 22px;
-			color: #c7c5c5;
-		}
-
-		.category-item.disabled::after {
-    			content: "Em breve";
-			font-family: Lobster Two, cursive;
-    			position: absolute;
-    			top: -10px;
-    			right: -20px;
-   		 	background: #91592c;
-    			color: white;
-    			padding: 3px 10px;
-    			font-size: 16px;
-    			font-weight: bold;
-    			transform: rotate(20deg);
-    			border-radius: 4px;
-		}
-
 		img {
 			height: 100px;
 			width: auto;
@@ -124,8 +49,116 @@
     			padding: 0;
 		}
 
+		.green-bar {
+			background-color: #168545;
+			height: 64px;
+			width: 100%;
+    			color: #fff;
+			font-size: 32px;
+			display: flex;
+    			align-items: center;
+			justify-content: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Lobster, cursive;
+		}
+
+		.green-link {
+		    color: #fff;
+		    text-decoration: none;
+		    font-family: Lobster, cursive;
+		    font-size: 32px;
+		}
+	
+		.green-link:hover {
+		    text-decoration: underline;
+		}
+
+		.title {
+			background-color: #2dcc70;
+			color: #fff;
+			position: relative;
+			font-size: 28px;
+   			padding: 20px 0;
+			margin: 0;
+			display: flex;
+ 			justify-content: center;
+   			align-items: center;
+		}
+
+		.products-grid {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+    			max-width: 900px;
+   			margin: 10px auto;
+			margin-top: 0px;
+    			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		.products-grid img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+    			background-color: #eee;
+		}
+
+		.product {
+    			text-align: center;
+		}
+
+		.item img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+		}
+		
+		.label {
+    			margin-top: 8px;
+    			font-size: 16px;
+    			color: black;
+    			font-weight: 600;
+			font-family: Arial;
+		}
+
+		.back-to-top {
+ 		   	position: fixed;
+    			bottom: 20px;
+    			right: 20px;
+    			width: 45px;
+    			height: 45px;
+    			background-color: #168545;
+    			color: #fff;
+    			border: none;
+    			border-radius: 50%;
+    			font-size: 22px;
+    			font-weight: bold;
+    			cursor: pointer;
+    			box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    			display: flex;
+    			align-items: center;
+    			justify-content: center;
+    			z-index: 9999;
+    			transition: transform 0.2s ease, background-color 0.2s ease;
+		}
+
+		.back-to-top:hover {
+    			background-color: #0f6a36;
+    			transform: scale(1.1);
+		}
+
 	</style>
 </head>
+
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ↑
+</button>
+	
 <body>
 
 	<div class="top-bar">
@@ -139,24 +172,103 @@
 	</div>
 
 	<div class="green-bar">
-		Resinas
+		<a href="https://emporiojanial.com.br/papel-para-decoupage" class="green-link">Guardanapos</a>
 	</div>
 
 	<h1 class="title">
-		Escolha a categoria
+		Guardanapos de Papel (imagem do guardanapo aberto)
 	</h1>
 
-	<div class="category-bar">
-		<a href="apliques/" class="category-item">Apliques</a>
-    		<a href="bandejas.html" class="category-item disabled">Bandejas</a>
-    		<a href="kits.html" class="category-item disabled">Kits</a>
-    		<a href="molduras.html" class="category-item disabled">Molduras</a>
-    		<a href="pes.html" class="category-item disabled">Pés</a>
-  		<a href="portajoias.html" class="category-item disabled">Porta Jóias</a>
-    		<a href="puxadores.html" class="category-item disabled">Puxadores</a>
+	<div class="products-grid">
+
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0001</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0002</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0003</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0004</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0005</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0006</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0007</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0008</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0009</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0010</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0013</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0016</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0019</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0020</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0021</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0022</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0023</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0024</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0025</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0026</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0027</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0028</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0029</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0031</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0034</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0035</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0036</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0037</p>
+		</div>
+		<div class="product">
+			<img src="/images/papel-para-decoupage/GP-00-b.jpg" loading="lazy" alt="">			<p class="label">0038</p>
+		</div>
 	</div>
-
-
 
 </body>
 </html>
