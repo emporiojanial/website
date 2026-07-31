@@ -99,17 +99,15 @@
 			box-sizing: border-box;
 		}
 
-		/* Every row: 1st & 2nd closer */
-		.products-grid > div:nth-child(4n + 1),
-		.products-grid > div:nth-child(4n + 2) {
-    		margin-right: -10px;
-		}
+/* 1st and 2nd closer */
+.products-grid > div:nth-child(4n + 2) {
+    margin-left: -10px; 
+}
 
-		/* Every row: 3rd & 4th closer */
-		.products-grid > div:nth-child(4n + 3),
-		.products-grid > div:nth-child(4n + 4) {
-		    margin-left: -10px;
-		}
+/* 3rd and 4th closer */
+.products-grid > div:nth-child(4n + 4) {
+    margin-left: -10px; 
+}
 
 		.products-grid img {
     			width: 100%;
