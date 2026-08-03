@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+	<title>Emporio Janial</title>
+	<style>
+		* {
+    			box-sizing: border-box;
+		}
+
+		.top-bar {
+			background-color: #91592c;
+			height: 32px;
+			width: 100%;
+    			color: #fff;
+    			font-size: 14px;
+			font-weight: bold;
+			font-family: Arial;
+    			padding-left: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.logo-bar {
+			background-color: #f9f3e5;
+			height: 132px;
+			width: 100%;
+    			color: #fff;
+    			align-items: center;
+			padding-top: 0px;
+		}
+
+		img {
+			height: 100px;
+			width: auto;
+			margin-top: 20px;
+		}
+
+		body {
+			font-family: Lobster Two, cursive;
+			font-size: 18px;
+			font-weight: 400;
+			text-align: center;
+			background-color: #f7f7f7;
+			margin: 0;
+    			padding: 0;
+		}
+
+		.green-bar {
+			background-color: #168545;
+			height: 64px;
+			width: 100%;
+    			color: #fff;
+			font-size: 32px;
+			display: flex;
+    			align-items: center;
+			justify-content: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Lobster, cursive;
+		}
+
+		.green-link {
+		    color: #fff;
+		    text-decoration: none;
+		    font-family: Lobster, cursive;
+		    font-size: 32px;
+		}
+	
+		.green-link:hover {
+		    text-decoration: underline;
+		}
+
+		.title {
+			background-color: #2dcc70;
+			color: #fff;
+			position: relative;
+			font-size: 28px;
+   			padding: 20px 0;
+			margin: 0;
+			margin-bottom: 20px;
+			display: flex;
+ 			justify-content: center;
+   			align-items: center;
+		}
+
+		.size-bar {
+			background-color: #fff;
+			height: 60px;
+			width: 100%;
+    			color: #000;
+			font-size: 24px;
+			display: flex;
+    			align-items: center;
+			justify-content: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Lobster, cursive;
+		}
+
+		.products-grid {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 20px;
+    			max-width: 900px;
+   			margin: 10px auto;
+			margin-top: 0px;
+    			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		.products-grid img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+    			background-color: #eee;
+		}
+
+		.product {
+    			text-align: center;
+		}
+
+		.item img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+		}
+		
+		.label {
+    			margin-top: 8px;
+    			font-size: 16px;
+    			color: black;
+    			font-weight: 600;
+			font-family: Arial;
+		}
+
+		.back-to-top {
+ 		   	position: fixed;
+    			bottom: 20px;
+    			right: 20px;
+    			width: 45px;
+    			height: 45px;
+    			background-color: #168545;
+    			color: #fff;
+    			border: none;
+    			border-radius: 50%;
+    			font-size: 22px;
+    			font-weight: bold;
+    			cursor: pointer;
+    			box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    			display: flex;
+    			align-items: center;
+    			justify-content: center;
+    			z-index: 9999;
+    			transition: transform 0.2s ease, background-color 0.2s ease;
+		}
+
+		.back-to-top:hover {
+    			background-color: #0f6a36;
+    			transform: scale(1.1);
+		}
+		
+
+	</style>
+</head>
+
+
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ↑
+</button>
+
+<body>
+
+	<div class="top-bar">
+		Loja de Material para Artesanato - Atendimento WhatsApp: (19) 99804-6700
+	</div>
+
+	<div class="logo-bar">
+		<a href="https://emporiojanial.com.br">
+			<img src="/images/EJlogolado.png" alt="EJlogo">
+		</a>
+	</div>
+
+	<div class="green-bar">
+		<a href="https://emporiojanial.com.br/stencil" class="green-link">Stencil</a>
+	</div>
+
+	<h1 class="title">
+		Alimentos e Cozinha
+	</h1>
+
+	<div class="size-bar">
+		8 x 28 cm
+	</div>
+
+	<div class="products-grid">
+		
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/ste-032.jpg" loading="lazy" alt="">			<p class="label">STE 032</p>
+		</div>	
+
+	</div>
+	<div class="size-bar">
+		10 x 10 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA3130.jpg" loading="lazy" alt="">			<p class="label">OPA 3130</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA3131.jpg" loading="lazy" alt="">			<p class="label">OPA 3131</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/st-x-247.jpg" loading="lazy" alt="">			<p class="label">ST-X 247</p>
+		</div>	
+		
+	</div>
+
+	<div class="size-bar">
+		14 x 14 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1797.jpg" loading="lazy" alt="">			<p class="label">OPA 1797</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1798.jpg" loading="lazy" alt="">			<p class="label">OPA 1798</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1799.jpg" loading="lazy" alt="">			<p class="label">OPA 1799</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1800.jpg" loading="lazy" alt="">			<p class="label">OPA 1800</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1802.jpg" loading="lazy" alt="">			<p class="label">OPA 1802</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1803.jpg" loading="lazy" alt="">			<p class="label">OPA 1803</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1805.jpg" loading="lazy" alt="">			<p class="label">OPA 1805</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1806.jpg" loading="lazy" alt="">			<p class="label">OPA 1806</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1807.jpg" loading="lazy" alt="">			<p class="label">OPA 1807</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1808.jpg" loading="lazy" alt="">			<p class="label">OPA 1808</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1819.jpg" loading="lazy" alt="">			<p class="label">OPA 1819</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1820.jpg" loading="lazy" alt="">			<p class="label">OPA 1820</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1821.jpg" loading="lazy" alt="">			<p class="label">OPA 1821</p>
+		</div>	
+    
+	</div>
+	
+	<div class="size-bar">
+		17 x 21 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STM-069.jpg" loading="lazy" alt="">			<p class="label">STM 069</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STM-071.jpg" loading="lazy" alt="">			<p class="label">STM 071</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STM-073.jpg" loading="lazy" alt="">			<p class="label">STM 073</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STM-074.jpg" loading="lazy" alt="">			<p class="label">STM 074</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STM-079.jpg" loading="lazy" alt="">			<p class="label">STM 079</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STM-080.jpg" loading="lazy" alt="">			<p class="label">STM 080</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STM-081.jpg" loading="lazy" alt="">			<p class="label">STM 081</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STM-085.jpg" loading="lazy" alt="">			<p class="label">STM 085</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STM-086.jpg" loading="lazy" alt="">			<p class="label">STM 086</p>
+		</div>	
+    
+	</div>
+	
+	<div class="size-bar">
+		17 x 42 cm
+	</div>
+	
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STG-023.jpg" loading="lazy" alt="">			<p class="label">STG 023</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STG-055.jpg" loading="lazy" alt="">			<p class="label">STG 055</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/STG-056.jpg" loading="lazy" alt="">			<p class="label">STG 056</p>
+		</div>	
+
+	</div>
+
+  <div class="size-bar">
+		20 x 25 cm
+	</div>
+	
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/OPA1399.jpg" loading="lazy" alt="">			<p class="label">OPA 1399</p>
+		</div>	
+
+	</div>
+
+  <div class="size-bar">
+		30 x 30 cm
+	</div>
+	
+	<div class="products-grid">
+
+		<div class="product">
+			<img src="/images/stencil/alfabeto-numeros/QN455.jpg" loading="lazy" alt="">			<p class="label">QN 455</p>
+		</div>	
+	</div>
+
+  
+</body>
+</html>
