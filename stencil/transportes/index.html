@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+	<title>Emporio Janial</title>
+	<style>
+		* {
+    			box-sizing: border-box;
+		}
+
+		.top-bar {
+			background-color: #91592c;
+			height: 32px;
+			width: 100%;
+    			color: #fff;
+    			font-size: 14px;
+			font-weight: bold;
+			font-family: Arial;
+    			padding-left: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.logo-bar {
+			background-color: #f9f3e5;
+			height: 132px;
+			width: 100%;
+    			color: #fff;
+    			align-items: center;
+			padding-top: 0px;
+		}
+
+		img {
+			height: 100px;
+			width: auto;
+			margin-top: 20px;
+		}
+
+		body {
+			font-family: Lobster Two, cursive;
+			font-size: 18px;
+			font-weight: 400;
+			text-align: center;
+			background-color: #f7f7f7;
+			margin: 0;
+    			padding: 0;
+		}
+
+		.green-bar {
+			background-color: #168545;
+			height: 64px;
+			width: 100%;
+    			color: #fff;
+			font-size: 32px;
+			display: flex;
+    			align-items: center;
+			justify-content: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Lobster, cursive;
+		}
+
+		.green-link {
+		    color: #fff;
+		    text-decoration: none;
+		    font-family: Lobster, cursive;
+		    font-size: 32px;
+		}
+	
+		.green-link:hover {
+		    text-decoration: underline;
+		}
+
+		.title {
+			background-color: #2dcc70;
+			color: #fff;
+			position: relative;
+			font-size: 28px;
+   			padding: 20px 0;
+			margin: 0;
+			margin-bottom: 20px;
+			display: flex;
+ 			justify-content: center;
+   			align-items: center;
+		}
+
+		.size-bar {
+			background-color: #fff;
+			height: 60px;
+			width: 100%;
+    			color: #000;
+			font-size: 24px;
+			display: flex;
+    			align-items: center;
+			justify-content: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Lobster, cursive;
+		}
+
+		.products-grid {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 20px;
+    			max-width: 900px;
+   			margin: 10px auto;
+			margin-top: 0px;
+    			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		.products-grid img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+    			background-color: #eee;
+		}
+
+		.product {
+    			text-align: center;
+		}
+
+		.item img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+		}
+		
+		.label {
+    			margin-top: 8px;
+    			font-size: 16px;
+    			color: black;
+    			font-weight: 600;
+			font-family: Arial;
+		}
+
+		.back-to-top {
+ 		   	position: fixed;
+    			bottom: 20px;
+    			right: 20px;
+    			width: 45px;
+    			height: 45px;
+    			background-color: #168545;
+    			color: #fff;
+    			border: none;
+    			border-radius: 50%;
+    			font-size: 22px;
+    			font-weight: bold;
+    			cursor: pointer;
+    			box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    			display: flex;
+    			align-items: center;
+    			justify-content: center;
+    			z-index: 9999;
+    			transition: transform 0.2s ease, background-color 0.2s ease;
+		}
+
+		.back-to-top:hover {
+    			background-color: #0f6a36;
+    			transform: scale(1.1);
+		}
+		
+
+	</style>
+</head>
+
+
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ↑
+</button>
+
+<body>
+
+	<div class="top-bar">
+		Loja de Material para Artesanato - Atendimento WhatsApp: (19) 99804-6700
+	</div>
+
+	<div class="logo-bar">
+		<a href="https://emporiojanial.com.br">
+			<img src="/images/EJlogolado.png" alt="EJlogo">
+		</a>
+	</div>
+
+	<div class="green-bar">
+		<a href="https://emporiojanial.com.br/stencil" class="green-link">Stencil</a>
+	</div>
+
+	<h1 class="title">
+		Transportes
+	</h1>
+
+	<div class="size-bar">
+		4 x 30 cm
+	</div>
+
+	<div class="products-grid">
+		
+		<div class="product">
+			<img src="/images/stencil/transportes/jk-318.jpg" loading="lazy" alt="">			<p class="label">JK 318</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/transportes/OPA772.jpg" loading="lazy" alt="">			<p class="label">OPA 772</p>
+		</div>	
+	</div>
+
+	<div class="size-bar">
+		6 x 17 cm
+	</div>
+
+	<div class="products-grid">
+		
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/STP-011.jpg" loading="lazy" alt="">			<p class="label">STP 011</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/STP-012.jpg" loading="lazy" alt="">			<p class="label">STP 012</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/STP-014.jpg" loading="lazy" alt="">			<p class="label">STP 014</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/STP-017.jpg" loading="lazy" alt="">			<p class="label">STP 017</p>
+		</div>	
+	</div>
+
+	<div class="size-bar">
+		7 x 15 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1976.jpg" loading="lazy" alt="">			<p class="label">OPA 1976</p>
+		</div>	
+	</div>
+
+	<div class="size-bar">
+		8 x 28 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/ste-109.jpg" loading="lazy" alt="">			<p class="label">STE 109</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/ste-110.jpg" loading="lazy" alt="">			<p class="label">STE 110</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/ste-303.jpg" loading="lazy" alt="">			<p class="label">STE 303</p>
+		</div>	
+	</div>
+	
+	
+	<div class="size-bar">
+		10 x 10 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/ja-013.jpg" loading="lazy" alt="">			<p class="label">JA 013</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/ja-131.jpg" loading="lazy" alt="">			<p class="label">JA 131</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/ja-133.jpg" loading="lazy" alt="">			<p class="label">JA 133</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA213.jpg" loading="lazy" alt="">			<p class="label">OPA 213</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA782.jpg" loading="lazy" alt="">			<p class="label">OPA 782</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA785.jpg" loading="lazy" alt="">			<p class="label">OPA 785</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1049.jpg" loading="lazy" alt="">			<p class="label">OPA 1049</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1096.jpg" loading="lazy" alt="">			<p class="label">OPA 1096</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1097.jpg" loading="lazy" alt="">			<p class="label">OPA 1097</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1098.jpg" loading="lazy" alt="">			<p class="label">OPA 1098</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1984.jpg" loading="lazy" alt="">			<p class="label">OPA 1984</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/st-x-015.jpg" loading="lazy" alt="">			<p class="label">ST-X 015</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/st-x-090.jpg" loading="lazy" alt="">			<p class="label">ST-X 090</p>
+		</div>	
+	</div>
+
+	<div class="size-bar">
+		10 x 30 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/JB-706.jpg" loading="lazy" alt="">			<p class="label">JB 706</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/JB-768.jpg" loading="lazy" alt="">			<p class="label">JB 768</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA039.jpg" loading="lazy" alt="">			<p class="label">OPA 039</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA099.jpg" loading="lazy" alt="">			<p class="label">OPA 099</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA117.jpg" loading="lazy" alt="">			<p class="label">OPA 117</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1866.jpg" loading="lazy" alt="">			<p class="label">OPA 1866</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1873.jpg" loading="lazy" alt="">			<p class="label">OPA 1873</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1989.jpg" loading="lazy" alt="">			<p class="label">OPA 1989</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1991.jpg" loading="lazy" alt="">			<p class="label">OPA 1991</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2157.jpg" loading="lazy" alt="">			<p class="label">OPA 2157</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2235.jpg" loading="lazy" alt="">			<p class="label">OPA2235</p>
+		</div>		
+	</div>
+
+
+	<div class="size-bar">
+		14 x 14 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1141.jpg" loading="lazy" alt="">			<p class="label">OPA 1141</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1172.jpg" loading="lazy" alt="">			<p class="label">OPA 1172</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1378.jpg" loading="lazy" alt="">			<p class="label">OPA 1378</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2015.jpg" loading="lazy" alt="">			<p class="label">OPA 2015</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2016.jpg" loading="lazy" alt="">			<p class="label">OPA 2016</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2017.jpg" loading="lazy" alt="">			<p class="label">OPA 2017</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2018.jpg" loading="lazy" alt="">			<p class="label">OPA 2018</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2025.jpg" loading="lazy" alt="">			<p class="label">OPA 2025</p>
+		</div>
+		
+	</div>
+
+	<div class="size-bar">
+		15 x 20 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/jc-1082.jpg" loading="lazy" alt="">			<p class="label">JC 1082</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/jc-1160.jpg" loading="lazy" alt="">			<p class="label">JC 1160</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/jc-1235.jpg" loading="lazy" alt="">			<p class="label">JC 1235</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA751.jpg" loading="lazy" alt="">			<p class="label">OPA 751</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2046.jpg" loading="lazy" alt="">			<p class="label">OPA 2046</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA3382.jpg" loading="lazy" alt="">			<p class="label">OPA 3382</p>
+		</div>
+	</div>
+
+	<div class="size-bar">
+		15 x 41 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/hj-334.jpg" loading="lazy" alt="">			<p class="label">HJ 334</p>
+		</div>
+	</div>
+	
+	<div class="size-bar">
+		17 x 21 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/stm1-005.jpg" loading="lazy" alt="">			<p class="label">STM1 005</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/stm-170.jpg" loading="lazy" alt="">			<p class="label">STM 170</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/STM-362.jpg" loading="lazy" alt="">			<p class="label">STM 362</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/STM-379.jpg" loading="lazy" alt="">			<p class="label">STM 379</p>
+		</div>
+	</div>
+	
+	<div class="size-bar">
+		17 x 42 cm
+	</div>
+	
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA3110.png" loading="lazy" alt="">			<p class="label">OPA 3110</p>
+		</div>
+
+	</div>
+
+  <div class="size-bar">
+		20 x 25 cm
+	</div>
+	
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2053.jpg" loading="lazy" alt="">			<p class="label">OPA 2053</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2082.jpg" loading="lazy" alt="">			<p class="label">OPA 2082</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA3055.png" loading="lazy" alt="">			<p class="label">OPA 3055</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA3112.png" loading="lazy" alt="">			<p class="label">OPA 3112</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA3402.png" loading="lazy" alt="">			<p class="label">OPA 3402</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA3403.png" loading="lazy" alt="">			<p class="label">OPA 3403</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA3405.png" loading="lazy" alt="">			<p class="label">OPA 3405</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA3413.png" loading="lazy" alt="">			<p class="label">OPA 3413</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA3414.png" loading="lazy" alt="">			<p class="label">OPA 3414</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA3416.png" loading="lazy" alt="">			<p class="label">OPA 3416</p>
+		</div>	
+
+	</div>
+
+  <div class="size-bar">
+		30 x 30 cm
+	</div>
+	
+	<div class="products-grid">
+
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2088.jpg" loading="lazy" alt="">			<p class="label">OPA 2088</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2196.jpg" loading="lazy" alt="">			<p class="label">OPA 2196</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA2197.jpg" loading="lazy" alt="">			<p class="label">OPA 2197</p>
+		</div>	
+	</div>
+
+	<div class="size-bar">
+		32 x 42 cm
+	</div>
+	
+	<div class="products-grid">
+
+		<div class="product">
+			<img src="/images/stencil/alimentos-cozinha/OPA1427.jpg" loading="lazy" alt="">			<p class="label">OPA 1427</p>
+		</div>	
+	</div>
+  
+</body>
+</html>
