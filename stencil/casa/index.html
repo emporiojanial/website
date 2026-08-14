@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+
+	<title>Emporio Janial</title>
+	<style>
+		* {
+    			box-sizing: border-box;
+		}
+
+		.top-bar {
+			background-color: #91592c;
+			height: 32px;
+			width: 100%;
+    			color: #fff;
+    			font-size: 14px;
+			font-weight: bold;
+			font-family: Arial;
+    			padding-left: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.logo-bar {
+			background-color: #f9f3e5;
+			height: 132px;
+			width: 100%;
+    			color: #fff;
+    			align-items: center;
+			padding-top: 0px;
+		}
+
+		img {
+			height: 100px;
+			width: auto;
+			margin-top: 20px;
+		}
+
+		body {
+			font-family: Lobster Two, cursive;
+			font-size: 18px;
+			font-weight: 400;
+			text-align: center;
+			background-color: #f7f7f7;
+			margin: 0;
+    			padding: 0;
+		}
+
+		.green-bar {
+			background-color: #168545;
+			height: 64px;
+			width: 100%;
+    			color: #fff;
+			font-size: 32px;
+			display: flex;
+    			align-items: center;
+			justify-content: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Lobster, cursive;
+		}
+
+		.green-link {
+		    color: #fff;
+		    text-decoration: none;
+		    font-family: Lobster, cursive;
+		    font-size: 32px;
+		}
+	
+		.green-link:hover {
+		    text-decoration: underline;
+		}
+
+		.title {
+			background-color: #2dcc70;
+			color: #fff;
+			position: relative;
+			font-size: 28px;
+   			padding: 20px 0;
+			margin: 0;
+			margin-bottom: 20px;
+			display: flex;
+ 			justify-content: center;
+   			align-items: center;
+		}
+
+		.size-bar {
+			background-color: #fff;
+			height: 60px;
+			width: 100%;
+    			color: #000;
+			font-size: 24px;
+			display: flex;
+    			align-items: center;
+			justify-content: center;
+			padding: 20px 80px;
+			line-height: 1.6; 
+			text-align: left;
+			font-family: Lobster, cursive;
+		}
+
+		.products-grid {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 20px;
+    			max-width: 900px;
+   			margin: 10px auto;
+			margin-top: 0px;
+    			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		.products-grid img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+    			background-color: #eee;
+		}
+
+		.product {
+    			text-align: center;
+		}
+
+		.item img {
+    			width: 100%;
+    			height: auto;
+    			border-radius: 8px;
+    			object-fit: cover;
+		}
+		
+		.label {
+    			margin-top: 8px;
+    			font-size: 16px;
+    			color: black;
+    			font-weight: 600;
+			font-family: Arial;
+		}
+
+		.back-to-top {
+ 		   	position: fixed;
+    			bottom: 20px;
+    			right: 20px;
+    			width: 45px;
+    			height: 45px;
+    			background-color: #168545;
+    			color: #fff;
+    			border: none;
+    			border-radius: 50%;
+    			font-size: 22px;
+    			font-weight: bold;
+    			cursor: pointer;
+    			box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    			display: flex;
+    			align-items: center;
+    			justify-content: center;
+    			z-index: 9999;
+    			transition: transform 0.2s ease, background-color 0.2s ease;
+		}
+
+		.back-to-top:hover {
+    			background-color: #0f6a36;
+    			transform: scale(1.1);
+		}
+		
+
+	</style>
+</head>
+
+
+<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ↑
+</button>
+
+<body>
+
+	<div class="top-bar">
+		Loja de Material para Artesanato - Atendimento WhatsApp: (19) 99804-6700
+	</div>
+
+	<div class="logo-bar">
+		<a href="https://emporiojanial.com.br">
+			<img src="/images/EJlogolado.png" alt="EJlogo">
+		</a>
+	</div>
+
+	<div class="green-bar">
+		<a href="https://emporiojanial.com.br/stencil" class="green-link">Stencil</a>
+	</div>
+
+	<h1 class="title">
+		Casa
+	</h1>
+
+	<div class="size-bar">
+		4 x 30 cm
+	</div>
+
+	<div class="products-grid">
+		
+		<div class="product">
+			<img src="/images/stencil/transportes/jk-318.jpg" loading="lazy" alt="">			<p class="label">JK 318</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/transportes/OPA772.jpg" loading="lazy" alt="">			<p class="label">OPA 772</p>
+		</div>	
+	</div>
+
+	<div class="size-bar">
+		6 x 30 cm
+	</div>
+
+	<div class="products-grid">
+		
+		<div class="product">
+			<img src="/images/stencil/transportes/OPA813.jpg" loading="lazy" alt="">			<p class="label">OPA 813</p>
+		</div>	
+	</div>
+
+	<div class="size-bar">
+		8 x 28 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/transportes/ste-003.jpg" loading="lazy" alt="">			<p class="label">STE 003</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/transportes/ste-006.jpg" loading="lazy" alt="">			<p class="label">STE 006</p>
+		</div>		
+	</div>
+	
+	
+	<div class="size-bar">
+		10 x 30 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/transportes/OPA712.jpg" loading="lazy" alt="">			<p class="label">OPA 712</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/transportes/OPA1037.jpg" loading="lazy" alt="">			<p class="label">OPA 1037</p>
+		</div>
+			
+	</div>
+
+	<div class="size-bar">
+		14 x 14 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/transportes/OPA1138.jpg" loading="lazy" alt="">			<p class="label">OPA 1138</p>
+		</div>
+	</div>
+
+	<div class="size-bar">
+		15 x 15 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/transportes/QD-288.jpg" loading="lazy" alt="">			<p class="label">QD 288</p>
+		</div>
+	
+	</div>
+
+	<div class="size-bar">
+		15 x 20 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/transportes/OPA1312.jpg" loading="lazy" alt="">			<p class="label">OPA 1312</p>
+		</div>	
+	</div>
+
+	<div class="size-bar">
+		16 x 16 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/transportes/stq-003.jpg" loading="lazy" alt="">			<p class="label">STQ 003</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/transportes/stq-004.jpg" loading="lazy" alt="">			<p class="label">STQ 004</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/transportes/stq-005.jpg" loading="lazy" alt="">			<p class="label">STQ 005</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/transportes/stq-006.jpg" loading="lazy" alt="">			<p class="label">STQ 006</p>
+		</div>
+	</div>
+	
+	<div class="size-bar">
+		17 x 21 cm
+	</div>
+
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/transportes/STM-119.jpg" loading="lazy" alt="">			<p class="label">STM 119</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/transportes/STM-120.jpg" loading="lazy" alt="">			<p class="label">STM 120</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/transportes/STM-121.jpg" loading="lazy" alt="">			<p class="label">STM 121</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/transportes/STM-372.jpg" loading="lazy" alt="">			<p class="label">STM 372</p>
+		</div>	
+		<div class="product">
+			<img src="/images/stencil/transportes/STM-373.jpg" loading="lazy" alt="">			<p class="label">STM 373</p>
+		</div>	
+
+	</div>
+	
+	<div class="size-bar">
+		20 x 25 cm
+	</div>
+	
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/transportes/OPA1401.jpg" loading="lazy" alt="">			<p class="label">OPA 1401</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/transportes/OPA2070.jpg" loading="lazy" alt="">			<p class="label">OPA 2070</p>
+		</div>
+	</div>
+
+  <div class="size-bar">
+		30 x 30 cm
+	</div>
+	
+	<div class="products-grid">
+		<div class="product">
+			<img src="/images/stencil/transportes/OPA2086.jpg" loading="lazy" alt="">			<p class="label">OPA 2086</p>
+		</div>
+		<div class="product">
+			<img src="/images/stencil/transportes/OPA2096.jpg" loading="lazy" alt="">			<p class="label">OPA 2096</p>
+		</div>
+	</div>
+  
+</body>
+</html>
